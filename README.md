@@ -25,9 +25,8 @@ This is a **Photo Gallery App** built with Angular 19. The app allows users to b
 
 Before running the app, ensure you have the following installed:
 
-- **Node.js:** Version 18.x or later (LTS recommended)
-- **npm:** Version 9.x or later (comes with Node.js)
-- **Angular CLI:** Version 19.x  
+- **Node.js:** Version 18 or later
+- **Angular CLI:** Version 19
 npm install -g @angular/cli@19
 
 ## Installation
