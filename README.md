@@ -30,18 +30,18 @@ Before running the app, ensure you have the following installed:
 - **Angular CLI:** Version 19.x  
 npm install -g @angular/cli@19
 
-text
-
 ## Installation
 
 1. **Clone the Repository:**
-git clone https://github.com/<your-username>/photo-gallery-app.git
+git clone (repository link)
+
+2. **Navigate to project directory
 cd photo-gallery-app
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 npm install
 
-3. **Verify Installation:**  
+4. **Verify Installation:**  
 Ensure all dependencies are installed correctly by checking the `node_modules` directory.
 
 ## Running the App
