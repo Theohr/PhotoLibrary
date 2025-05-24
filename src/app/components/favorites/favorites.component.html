@@ -1,0 +1,20 @@
+<!-- Main container for the favorites page -->
+<div class="container">
+  <!-- Title of the page -->
+  <h2>Favorites</h2>
+  <!-- Display the image grid if there are valid favorites, otherwise show a message -->
+  <div *ngIf="hasValidFavorites() else noFavorites" class="image-grid" data-debug="image-grid">
+    <!-- Loop through each favorite image and display it -->
+    <div *ngFor="let image of favorites" class="image-card">
+      <!-- Image with a routerLink to the image details page using stableId -->
+      <img [src]="image.url" alt="Favorite Image" [routerLink]="['/photos', getEncodedId(image.stableId)]">
+    </div>
+  </div>
+  <!-- Template for when there are no favorites or an error occurs -->
+  <ng-template #noFavorites>
+    <!-- Show error message if loading favorites failed -->
+    <p *ngIf="errorLoadingFavorites">Failed to load favorites. Please try again later.</p>
+    <!-- Show "No favorites yet" message if no error and no favorites -->
+    <p *ngIf="!errorLoadingFavorites">No favorites yet.</p>
+  </ng-template>
+</div>

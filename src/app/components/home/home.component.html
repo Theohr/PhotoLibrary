@@ -1,0 +1,18 @@
+<div class="image-grid">
+  <!-- Loop through each image and display it -->
+  <div *ngFor="let image of images" class="image-card">
+    <div class="image-wrapper" (click)="toggleFavorite(image)">
+      <img [src]="image.url" alt="Random Image">
+      <!-- Favorite icon displayed if the image is favorited -->
+      <mat-icon *ngIf="isFavorited(image)" class="favorite-icon">favorite</mat-icon>
+    </div>
+  </div>
+</div>
+<!-- Loader displayed while fetching more images -->
+<div *ngIf="loading" class="loader-container">
+  <mat-spinner diameter="50"></mat-spinner>
+</div>
+<!-- "Back to Top" button displayed when scrolled down -->
+<button *ngIf="showBackToTop" mat-fab color="accent" class="back-to-top" (click)="scrollToTop()" aria-label="Back to Top">
+  <mat-icon>arrow_upward</mat-icon>
+</button>

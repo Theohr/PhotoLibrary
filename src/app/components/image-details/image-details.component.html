@@ -1,0 +1,7 @@
+<div class="container" *ngIf="image; else notFound">
+  <img [src]="image.url" alt="Image Details">
+  <button mat-raised-button color="warn" (click)="removeFromFavorites()">Remove from Favorites</button>
+</div>
+<ng-template #notFound>
+  <p>Image not found.</p>
+</ng-template>
