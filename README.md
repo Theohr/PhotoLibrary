@@ -28,6 +28,7 @@ Before running the app, ensure you have the following installed:
 - **Node.js:** Version 18 or later
 - **Angular CLI:** Version 19
 npm install -g @angular/cli@19
+npm install
 
 ## Installation
 
