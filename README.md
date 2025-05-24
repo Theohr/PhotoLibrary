@@ -35,7 +35,7 @@ npm install -g @angular/cli@19
 1. **Clone the Repository:**
 git clone (repository link)
 
-2. **Navigate to project directory
+2. **Navigate to project directory**
 cd photo-gallery-app
 
 3. **Install Dependencies:**
