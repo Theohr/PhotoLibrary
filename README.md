@@ -1,2 +1,58 @@
-# PhotoLibrary
-This is a photo library created in Angular 19
+# Photo Gallery App
+
+## Overview
+
+This is a **Photo Gallery App** built with Angular 19. The app allows users to browse a collection of images, favorite them, and view detailed information about each image. It features infinite scrolling, local storage for favorites, and responsive design. The app is designed to be modular, with standalone components and a clean architecture.
+
+## Features
+
+- **Home Page:**  
+  Displays a grid of images fetched from the [Picsum Photos API](https://picsum.photos/). Supports infinite scrolling to load more images as the user scrolls.
+
+- **Favorites Page:**  
+  Shows a list of favorited images, stored in `localStorage`, with validation to ensure data integrity.
+
+- **Image Details Page:**  
+  Displays a full-size image with navigation controls (previous/next) and an option to remove the image from favorites.
+
+- **Responsive Design:**  
+  Uses CSS Grid and Material Design components for a responsive and user-friendly interface.
+
+- **Unit Tests:**  
+  Comprehensive test suites for all components (`HomeComponent`, `FavoritesComponent`, `ImageDetailsComponent`, `AppComponent`) using Jasmine and Karma.
+
+## Prerequisites
+
+Before running the app, ensure you have the following installed:
+
+- **Node.js:** Version 18.x or later (LTS recommended)
+- **npm:** Version 9.x or later (comes with Node.js)
+- **Angular CLI:** Version 19.x  
+npm install -g @angular/cli@19
+
+text
+
+## Installation
+
+1. **Clone the Repository:**
+git clone https://github.com/<your-username>/photo-gallery-app.git
+cd photo-gallery-app
+
+2. **Install Dependencies:**
+npm install
+
+3. **Verify Installation:**  
+Ensure all dependencies are installed correctly by checking the `node_modules` directory.
+
+## Running the App
+
+- **Start the Development Server:**
+ng serve
+
+## Run Tests
+
+- **Run Tests:**
+ng test
+
+The app will be available at http://localhost:4200.
+
